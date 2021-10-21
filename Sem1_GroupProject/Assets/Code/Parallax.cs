@@ -15,10 +15,12 @@ public class Parallax : MonoBehaviour
     void FixedUpdate()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
-        if (transform.position.x < -18.2f)
+        if (transform.position.x < -18.44f)
         {
             transform.position = startpos;
         }
+
+
 
     }
 }
