@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 5f;
     public float deactivate_Timer = 3f;
+    public int score = 0;
 
     [HideInInspector]
     public bool is_EnemyBullet = false;
@@ -42,6 +43,16 @@ public class Bullet : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
+        if (target.gameObject.name == "Enemy_Plane(Clone)")
+        {
+            score += 50;
+            Destroy(target.gameObject);
+        }
+    }
+    private void OnGUI()
+    {
+        GUI.Box(new Rect(10, 40, 100, 30), "Score " + score);
     }
 
-    }
+}
