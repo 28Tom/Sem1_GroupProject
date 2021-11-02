@@ -203,8 +203,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51446609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.1579, y: 3.0831, z: 0}
-  m_LocalScale: {x: 0.3753, y: 0.4808, z: 1}
+  m_LocalPosition: {x: -7.3912, y: 3.0014, z: 0}
+  m_LocalScale: {x: 0.30306774, y: 0.3879585, z: 1}
   m_Children:
   - {fileID: 1467977370}
   m_Father: {fileID: 0}
@@ -390,7 +390,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &114813060
 GameObject:
@@ -662,8 +662,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544421968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.05, y: -3.49, z: 0}
-  m_LocalScale: {x: 1.8532, y: 1.7852, z: 1}
+  m_LocalPosition: {x: -5.49, y: -4.13, z: 0}
+  m_LocalScale: {x: 1.6506451, y: 1.3365793, z: 1}
   m_Children:
   - {fileID: 2085485707}
   - {fileID: 114813061}
@@ -783,8 +783,7 @@ MonoBehaviour:
   min_Y: -2.5
   max_Y: 2.5
   EnemyPlanePrefab:
-  - {fileID: 3087093032513647367, guid: 50d6fe359986f7d4da8ec72e10fe9543, type: 3}
-  - {fileID: 6966923752835943552, guid: f7a01cfb5c3484c429eb86912c4ccf68, type: 3}
+  - {fileID: 3087093032513647367, guid: e705e93ea0fec534aada058e8d2796bc, type: 3}
   timer: 1.5
 --- !u!4 &666614104
 Transform:
@@ -978,6 +977,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb5611ce2e6b5944ac305766dfaf506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1065733791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1065733793}
+  - component: {fileID: 1065733792}
+  m_Layer: 0
+  m_Name: EnemyBomberSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1065733792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065733791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a76b19b5b47b14e88dc1bbfd1e8ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min_Y: 4
+  max_Y: 4
+  EnemyPlanePrefab:
+  - {fileID: 1340620389928124725, guid: f7a01cfb5c3484c429eb86912c4ccf68, type: 3}
+  timer: 3
+--- !u!4 &1065733793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065733791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1189301402
 GameObject:
   m_ObjectHideFlags: 0
