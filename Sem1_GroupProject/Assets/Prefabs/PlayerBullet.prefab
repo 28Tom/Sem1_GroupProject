@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   deactivate_Timer: 3
-  score: 0
+  score: 1
   is_EnemyBullet: 0
 --- !u!212 &68777447584102899
 SpriteRenderer:

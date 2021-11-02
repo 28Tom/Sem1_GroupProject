@@ -315,7 +315,7 @@ GameObject:
   m_Layer: 0
   m_Name: attack_point
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -327,7 +327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540155452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3800001, y: -0.00999999, z: 0}
+  m_LocalPosition: {x: 1.6, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907042815}
@@ -570,7 +570,7 @@ MonoBehaviour:
   min_Y: -4.3
   max_Y: 4.3
   Enemy_PlanePrefab:
-  - {fileID: 6219983412921383075, guid: fcee4de3612412b438623e38f8091cb8, type: 3}
+  - {fileID: 3087093032513647367, guid: e705e93ea0fec534aada058e8d2796bc, type: 3}
   timer: 1
 --- !u!1 &1907042812
 GameObject:
@@ -633,7 +633,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3ed71a792f427074086e08f1aa13d623, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36527d465e782214da9bcbb87187cc5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -661,7 +661,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
+    oldSize: {x: 6.46, y: 1.76}
     newSize: {x: 1.67, y: 2.05}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -679,7 +679,7 @@ Transform:
   m_GameObject: {fileID: 1907042812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.8, y: -1.18, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3753, y: 0.4808, z: 1}
   m_Children:
   - {fileID: 540155453}
   m_Father: {fileID: 0}
@@ -700,7 +700,6 @@ MonoBehaviour:
   speed: 10
   yPos: 0
   lives: 3
-  score: 0
   gameObjects: []
   PlayerBullet: {fileID: 877624964121302724, guid: 3199f71e22b828842be19c6ea07e63ca, type: 3}
   attack_point: {fileID: 540155453}

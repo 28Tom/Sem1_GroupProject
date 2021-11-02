@@ -93,8 +93,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcd2d0c4190c3147b401260a49d01af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  deactivate_Timer: 3
+  speed: 0.3
+  deactivate_Timer: 2
+  score: 0
   is_EnemyBullet: 0
 --- !u!212 &1452591366183678966
 SpriteRenderer:
