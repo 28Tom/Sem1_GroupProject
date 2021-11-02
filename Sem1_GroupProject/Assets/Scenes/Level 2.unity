@@ -272,7 +272,6 @@ MonoBehaviour:
   speed: 5
   yPos: 0
   lives: 3
-  score: 0
   gameObjects: []
   PlayerBullet: {fileID: 877624964121302724, guid: 3199f71e22b828842be19c6ea07e63ca, type: 3}
   attack_point: {fileID: 1467977370}
@@ -663,7 +662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544421968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.89, y: -3.56, z: 0}
+  m_LocalPosition: {x: -5.05, y: -3.49, z: 0}
   m_LocalScale: {x: 1.8532, y: 1.7852, z: 1}
   m_Children:
   - {fileID: 2085485707}

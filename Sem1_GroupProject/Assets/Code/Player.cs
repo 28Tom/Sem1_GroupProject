@@ -91,7 +91,14 @@ public class Player : MonoBehaviour
         for (var i = 0; i < gameObjects.Length; i++)
             Destroy(gameObjects[i]);
     }
-    
+
+    void RemovalEnemyPlane()
+    {
+        gameObjects = GameObject.FindGameObjectsWithTag("EnemyPlane");
+        for (var i = 0; i < gameObjects.Length; i++)
+            Destroy(gameObjects[i]);
+    }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.name == "EnemyBullet(Clone)")
@@ -105,7 +112,19 @@ public class Player : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
-     
+
+        if (other.gameObject.name == "EnemyPlane(Clone)")
+        {
+            lives -= 1;
+            Destroy(other.gameObject);
+            if (lives == 0)
+            {
+                print("GAME OVER");
+                RemovalEnemyPlane();
+                Time.timeScale = 0;
+            }
+        }
+
     }
 
         private void OnGUI()
