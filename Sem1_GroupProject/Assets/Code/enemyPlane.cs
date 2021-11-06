@@ -63,6 +63,9 @@ public class enemyPlane : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D target)
     {
+
+        Score.scoreValue += 1;
+
         if(target.tag == "Bullet")
         {
             canMove = false;

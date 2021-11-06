@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float yPos;
 
     public int lives = 3;
+    public int score = 0;
 
     public GameObject[] gameObjects;
     public GameObject PlayerBullet;
@@ -124,12 +125,10 @@ public class Player : MonoBehaviour
                 Time.timeScale = 0;
             }
         }
-
     }
-
         private void OnGUI()
     {
         GUI.Box(new Rect(10, 10, 100, 30), "Time " + Time.time, myStyle);
-        GUI.Box(new Rect(10, 70, 100, 30), "Lives " + lives);
+        GUI.Box(new Rect(10, 40, 100, 30), "Lives " + lives);
     }
 }
