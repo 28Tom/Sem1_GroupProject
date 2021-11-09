@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.51
   deactivate_Timer: 2.5
-  is_EnemyBullet: 0
+  is_EnemyBomb: 0
 --- !u!212 &1452591366183678966
 SpriteRenderer:
   m_ObjectHideFlags: 0

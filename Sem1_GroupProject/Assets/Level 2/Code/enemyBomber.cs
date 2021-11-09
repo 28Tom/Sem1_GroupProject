@@ -64,7 +64,7 @@ public class enemyBomber : MonoBehaviour
     void OnTriggerEnter2D(Collider2D target)
     {
 
-        Score.scoreValue += 1;
+        
 
         if (target.tag == "Bullet")
         {

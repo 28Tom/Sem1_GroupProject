@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FriendlyShip : MonoBehaviour
 {
@@ -19,7 +20,10 @@ public class FriendlyShip : MonoBehaviour
 	void Update()
 	{
 		if (healthAmount <= 0)
+		{
 			Destroy(gameObject);
+			SceneManager.LoadScene("GameOver1");
+		}
 	}
 
 	void FixedUpdate()

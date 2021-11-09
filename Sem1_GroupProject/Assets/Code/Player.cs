@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -111,6 +112,7 @@ public class Player : MonoBehaviour
                 print("GAME OVER");
                 RemovalEnemyBullet();
                 Time.timeScale = 0;
+                SceneManager.LoadScene("GameOver1");
             }
         }
 
@@ -123,6 +125,7 @@ public class Player : MonoBehaviour
                 print("GAME OVER");
                 RemovalEnemyPlane();
                 Time.timeScale = 0;
+                SceneManager.LoadScene("GameOver1");
             }
         }
     }
